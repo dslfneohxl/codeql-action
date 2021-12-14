@@ -21,7 +21,7 @@ import {
   installPythonDeps,
   runInit,
 } from "./init";
-import { Language } from "./languages";
+import { KnownLanguage } from "./languages";
 import { getActionsLogger } from "./logging";
 import { parseRepositoryNwo } from "./repository";
 import {
@@ -175,7 +175,7 @@ async function run() {
     );
 
     if (
-      config.languages.includes(Language.python) &&
+      config.languages.includes(KnownLanguage.python) &&
       getRequiredInput("setup-python-dependencies") === "true"
     ) {
       try {
