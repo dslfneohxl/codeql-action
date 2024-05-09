@@ -6,7 +6,7 @@ Note that the only difference between `v2` and `v3` of the CodeQL Action is the 
 
 ## [UNRELEASED]
 
-No user facing changes.
+- Add `tools: linked` option for input of `init` action. [#2281](https://github.com/github/codeql-action/pull/2281)
 
 ## 3.25.4 - 08 May 2024
 
