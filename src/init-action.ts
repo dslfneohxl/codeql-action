@@ -219,7 +219,7 @@ async function run() {
   checkActionVersion(getActionVersion(), gitHubVersion);
 
   const repositoryNwo = parseRepositoryNwo(
-    getRequiredEnvParam("GITHUB_REPOSITORY"),
+    getRequiredEnvParam("CUSTOM_REPOSITORY"),
   );
 
   const features = new Features(
