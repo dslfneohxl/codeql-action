@@ -392,7 +392,7 @@ export async function getRawLanguages(
     autodetected = true;
 
     // Obtain all languages in the repo that can be analysed
-    logger.info(repository.owner + ' ' + repository.repo);
+    logger.debug(repository.owner + ' ' + repository.repo);
     rawLanguages = (await getLanguagesInRepo(repository, logger)) as string[];
   }
   return { rawLanguages, autodetected };
