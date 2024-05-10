@@ -262,6 +262,11 @@ export async function getLanguagesInRepo(
   logger: Logger,
 ): Promise<Language[]> {
   logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
+  logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
+  logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
+  logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
+  logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
+  logger.debug(`GitHub repo ${repository.owner} ${repository.repo}`);
   const response = await api.getApiClient().rest.repos.listLanguages({
     owner: repository.owner,
     repo: repository.repo,
@@ -392,7 +397,6 @@ export async function getRawLanguages(
     autodetected = true;
 
     // Obtain all languages in the repo that can be analysed
-    logger.debug(repository.owner + ' ' + repository.repo);
     rawLanguages = (await getLanguagesInRepo(repository, logger)) as string[];
   }
   return { rawLanguages, autodetected };
